@@ -1,0 +1,8 @@
+/* normalize */
+@import url(../vendor/normalize.css);
+
+/* fonts */
+@import url(../vendor/fonts/inter.css);
+
+/* pages */
+@import url(../blocks/page/page.css);
