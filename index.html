@@ -1,21 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mesto</title>
-    <link rel="stylesheet" href="./pages/index.css">
-</head>
-<body class="page">
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body class="page">
     <header class="header">
-      <img src="./images/header/logo.svg" alt="Логотип Mesto" class="header__logo">
+      <img
+        src="./images/header/logo.svg"
+        alt="Логотип Mesto"
+        class="header__logo"
+      />
     </header>
     <main class="content">
-        <section class="profile"></section>
-        <section class="elements"></section>
+      <section class="profile">
+        <img
+          src="./images/profile/profile__avatar.jpg"
+          alt="фото Антон Птушкин"
+          class="profile__avatar"
+        />
+        <div class="profile__info">
+          <h1 class="profile__user-name">Антон Птушкин</h1>
+          <p class="profile__user-status">Блог о путешествиях</p>
+          <button class="profile__edit-button"></button>
+        </div>
+        <button class="profile__add-button"></button>
+      </section>
+      <section class="elements">
+        <div class="element">
+          <img
+            src="./images/elements/bali.jpg"
+            alt="Бали"
+            class="element__photo"
+          />
+          <div class="element__caption">
+            <h2 class="element__header">Бали</h2>
+            <button class="element__like"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img
+            src="./images/elements/canada.jpg"
+            alt="Канада"
+            class="element__photo"
+          />
+          <div class="element__caption">
+            <h2 class="element__header">Канада</h2>
+            <button class="element__like"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img
+            src="./images/elements/hawaii.jpg"
+            alt="Гавайи"
+            class="element__photo"
+          />
+          <div class="element__caption">
+            <h2 class="element__header">Гавайи</h2>
+            <button class="element__like"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img
+            src="./images/elements/namibia.jpg"
+            alt="Намибия"
+            class="element__photo"
+          />
+          <div class="element__caption">
+            <h2 class="element__header">Намибия</h2>
+            <button class="element__like"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img
+            src="./images/elements/new zeland.jpg"
+            alt="Новая Зеландия"
+            class="element__photo"
+          />
+          <div class="element__caption">
+            <h2 class="element__header">Новая Зеландия</h2>
+            <button class="element__like"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img
+            src="./images/elements/norway.jpg"
+            alt="Норвегия"
+            class="element__photo"
+          />
+          <div class="element__caption">
+            <h2 class="element__header">Норвегия</h2>
+            <button class="element__like"></button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer"></footer>
-
-</body>
+  </body>
 </html>
