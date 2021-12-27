@@ -1,6 +1,7 @@
 .profile__info {
   display: grid;
   grid-template-areas: 'user-name edit-button' 'user-status user-status';
+  grid-template-columns: fit-content(400px) 24px;
   row-gap: 10px;
   column-gap: 20px;
 }
@@ -8,5 +9,6 @@
 @media screen and (max-width: 530px) {
   .profile__info {
     column-gap: 10px;
+    grid-template-columns: fit-content(400px) 18px;
   }
 }
