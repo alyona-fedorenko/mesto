@@ -1,7 +1,6 @@
-.element__caption {
-  height: 80px;
+.card__caption {
   background-color: #fff;
-  padding: 25px 20px 30px;
+  padding: 25px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;

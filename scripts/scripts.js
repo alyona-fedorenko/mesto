@@ -5,31 +5,28 @@ let overlayShowClass = 'overlay_showed';
 let userName = document.querySelector('.profile__user-name');
 let userStatus = document.querySelector('.profile__user-status');
 let form = document.querySelector('.form');
-let inputName = document.querySelector('.form__name-input');
-let inputStatus = document.querySelector('.form__status-input');
+let inputName = document.querySelector('.form__input_type_name');
+let inputStatus = document.querySelector('.form__input_type_status');
 
-inputName.value = userName.textContent;
-inputStatus.value = userStatus.textContent;
-
-function overlayShow() {
+function showOverlay() {
   overlay.classList.add(overlayShowClass);
-  document.body.style.overflow = 'hidden';
+  inputName.value = userName.textContent;
+  inputStatus.value = userStatus.textContent;
 }
 
-function overlayHide() {
+function hideOverlay() {
   overlay.classList.remove(overlayShowClass);
-  document.body.style.overflow = '';
 }
 
-function formSubmit(evt) {
+function handleFormSubmit(evt) {
   evt.preventDefault();
   userName.textContent = inputName.value;
   userStatus.textContent = inputStatus.value;
-  overlayHide();
+  hideOverlay();
 }
 
-editButton.addEventListener('click', overlayShow);
+editButton.addEventListener('click', showOverlay);
 
-closeButton.addEventListener('click', overlayHide);
+closeButton.addEventListener('click', hideOverlay);
 
-form.addEventListener('submit', formSubmit);
+form.addEventListener('submit', handleFormSubmit);

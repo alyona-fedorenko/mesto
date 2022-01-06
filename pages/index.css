@@ -10,6 +10,7 @@
 /* header */
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__logo-link/header__logo-link.css);
 
 /* content */
 @import url(../blocks/content/content.css);
@@ -23,16 +24,16 @@
 @import url(../blocks/profile/__user-name/profile__user-name.css);
 @import url(../blocks/profile/__user-status/profile__user-status.css);
 
-/* elements */
-@import url(../blocks/elements/elements.css);
+/* cards */
+@import url(../blocks/cards/cards.css);
 
 
-/* element */
-@import url(../blocks/element/__caption/element__caption.css);
-@import url(../blocks/element/__header/element__header.css);
-@import url(../blocks/element/__like/element__like.css);
-@import url(../blocks/element/element.css);
-@import url(../blocks/element/__photo/element__photo.css);
+/* card */
+@import url(../blocks/card/__caption/card__caption.css);
+@import url(../blocks/card/__header/card__header.css);
+@import url(../blocks/card/__like/card__like.css);
+@import url(../blocks/card/card.css);
+@import url(../blocks/card/__photo/card__photo.css);
 
 /* footer */
 @import url(../blocks/footer/footer.css);
@@ -47,7 +48,7 @@
 @import url(../blocks/popup/__close/popup__close.css);
 
 /* form */
-@import url(../blocks/form/__heder/form__header.css);
+@import url(../blocks/form/__header/form__header.css);
 @import url(../blocks/form/__input/form__input.css);
 @import url(../blocks/form/__button/form__button.css);
 
