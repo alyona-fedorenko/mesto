@@ -9,11 +9,13 @@
   </head>
   <body class="page">
     <header class="header">
-      <img
-        src="./images/header/logo.svg"
-        alt="Логотип Mesto"
-        class="header__logo"
-      />
+      <a href="#" class="header__logo-link">
+        <img
+          src="./images/header/logo.svg"
+          alt="Логотип Mesto"
+          class="header__logo"
+        />
+      </a>
     </header>
     <main class="content">
       <section class="profile">
@@ -25,101 +27,101 @@
         <div class="profile__info">
           <h1 class="profile__user-name">Антон Птушкин</h1>
           <p class="profile__user-status">Блог о путешествиях</p>
-          <button class="profile__edit-button"></button>
+          <button class="profile__edit-button" type="button"></button>
         </div>
-        <button class="profile__add-button"></button>
+        <button class="profile__add-button" type="button"></button>
       </section>
-      <section class="elements">
-        <div class="element">
+      <section class="cards">
+        <div class="card">
           <img
-            src="./images/elements/bali.jpg"
+            src="./images/cards/bali.jpg"
             alt="Бали"
-            class="element__photo"
+            class="card__photo"
           />
-          <div class="element__caption">
-            <h2 class="element__header">Бали</h2>
-            <button class="element__like"></button>
+          <div class="card__caption">
+            <h2 class="card__header">Бали</h2>
+            <button class="card__like" type="button"></button>
           </div>
         </div>
-        <div class="element">
+        <div class="card">
           <img
-            src="./images/elements/canada.jpg"
+            src="./images/cards/canada.jpg"
             alt="Канада"
-            class="element__photo"
+            class="card__photo"
           />
-          <div class="element__caption">
-            <h2 class="element__header">Канада</h2>
-            <button class="element__like"></button>
+          <div class="card__caption">
+            <h2 class="card__header">Канада</h2>
+            <button class="card__like" type="button"></button>
           </div>
         </div>
-        <div class="element">
+        <div class="card">
           <img
-            src="./images/elements/hawaii.jpg"
+            src="./images/cards/hawaii.jpg"
             alt="Гавайи"
-            class="element__photo"
+            class="card__photo"
           />
-          <div class="element__caption">
-            <h2 class="element__header">Гавайи</h2>
-            <button class="element__like"></button>
+          <div class="card__caption">
+            <h2 class="card__header">Гавайи</h2>
+            <button class="card__like" type="button"></button>
           </div>
         </div>
-        <div class="element">
+        <div class="card">
           <img
-            src="./images/elements/namibia.jpg"
+            src="./images/cards/namibia.jpg"
             alt="Намибия"
-            class="element__photo"
+            class="card__photo"
           />
-          <div class="element__caption">
-            <h2 class="element__header">Намибия</h2>
-            <button class="element__like"></button>
+          <div class="card__caption">
+            <h2 class="card__header">Намибия</h2>
+            <button class="card__like" type="button"></button>
           </div>
         </div>
-        <div class="element">
+        <div class="card">
           <img
-            src="./images/elements/new-zeland.jpg"
+            src="./images/cards/new-zeland.jpg"
             alt="Новая Зеландия"
-            class="element__photo"
+            class="card__photo"
           />
-          <div class="element__caption">
-            <h2 class="element__header">Новая Зеландия</h2>
-            <button class="element__like"></button>
+          <div class="card__caption">
+            <h2 class="card__header">Новая Зеландия</h2>
+            <button class="card__like" type="button"></button>
           </div>
         </div>
-        <div class="element">
+        <div class="card">
           <img
-            src="./images/elements/norway.jpg"
+            src="./images/cards/norway.jpg"
             alt="Норвегия"
-            class="element__photo"
+            class="card__photo"
           />
-          <div class="element__caption">
-            <h2 class="element__header">Норвегия</h2>
-            <button class="element__like"></button>
+          <div class="card__caption">
+            <h2 class="card__header">Норвегия</h2>
+            <button class="card__like" type="button"></button>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <p class="footer__copyright">© 2021 Mesto Russia</p>
+      <p class="footer__copyright">© 2022 Mesto Russia</p>
     </footer>
-    <section class="overlay">
+    <div class="overlay">
       <div class="popup">
-        <form class="form">
+        <form class="form" name="user-info">
           <h2 class="form__header">Редактировать профиль</h2>
           <input
             type="text"
-            class="form__input form__name-input"
+            class="form__input form__input_type_name"
             name="name-input"
           />
           <input
             type="text"
-            class="form__input form__status-input"
+            class="form__input form__input_type_status"
             name="status-input"
           />
-          <button type="submit" class="form__button">Сохранить</button>
+          <button type="submit" class="form__button" type="submit">Сохранить</button>
         </form>
-        <button class="popup__close"></button>
+        <button class="popup__close" type="button"></button>
       </div>
-    </section>
+    </div>
     <script src="./scripts/scripts.js"></script>
   </body>
 </html>
